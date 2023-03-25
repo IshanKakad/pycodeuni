@@ -1,13 +1,13 @@
-def remove_duplicates (1st): return list(set(1st))
+def remove_duplicates(lst):
+    return list(set(lst))
 
-input_list input("Enter a list of values separated by commas: ").split(",")
+# Get input from user
+lst = input("Enter a list of values, separated by spaces: ").split()
 
-input_list [int(item) for item in input_list] # Convert input values to integers
+# Convert input values to integers
+lst = [int(x) for x in lst]
 
-=
+# Remove duplicates and print result
+new_lst = remove_duplicates(lst)
+print(new_lst)
 
-output_list = remove_duplicates (input_list)
-
-print("Original list:", input_list)
-
-print("List without duplicates: ", output_list)
